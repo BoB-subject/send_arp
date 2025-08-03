@@ -11,7 +11,7 @@
 
 #define MAC_ADDR_LEN 6
 struct MAC{
-public:
+
     uint8_t mac[6];
     // uint8_t result_mac[6];//6크기에 8이들어가서 seg fault남--주소가 들어가고 있음.--> 지역 변수를 반환해서 문제였음. 전역변수를 선언하는 것으로 해결함
     void set_mac(const uint8_t bytes[]){
